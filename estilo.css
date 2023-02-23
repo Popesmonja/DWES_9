@@ -1,0 +1,109 @@
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border:0.25em solid red;
+    border-radius: 0.125em;
+}
+
+/* Header con su logo y título*/
+#header {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+    height: 15%;}
+  
+#logo {
+    height: 8%;
+    width: 8%;
+    margin-left: 10%;
+}
+
+#titulo{
+    margin-left: 15%;
+}
+
+#buscar{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+input[type=text] {
+    padding: 0.4em;
+    margin: 0.4em;
+    box-sizing: border-box;
+    border: 0.2em solid black;
+    border-radius: 0.4em;
+  }
+
+/* Sección*/
+
+.contenido{
+    display: flex;
+    flex-direction: column; 
+
+    align-items: center; 
+    width: 80%;
+    height: 90%;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: auto;
+}
+
+#poke{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60% ;
+    width:  60%;
+    padding:0.8em;
+    background-color:  rgb(168, 219, 238);
+    border: 2px solid black;
+    border-radius: 0.4em;
+}
+img {
+    height: 40%;
+    width: 40%;
+}
+
+/* Footer */
+#footer{
+    background-color:white;
+    font-size: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries*/
+@media screen and (max-width: 640px) {
+    /*#header {
+      background: blue;
+    }*/
+    body{
+        font-size:10px;
+    }
+}
+  
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+   /*#header {
+      background: red;
+    }*/
+    body{
+        font-size:12px;
+    }
+}
+  
+@media screen and (min-width: 1280px) {
+   /*#header {
+      background: green;
+    }*/
+    body{
+        font-size:16px;
+    }
+}
